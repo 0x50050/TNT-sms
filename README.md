@@ -22,8 +22,8 @@ Written by python 3.7.9
   
 # requirements
 
-  ⚠ phonenumbers
+  ⚠ phonenumbers (8.13.0)
   
-  ⚠ datetime
+  ⚠ datetime (4.7)
   
-  ⚠ requests
+  ⚠ requests (2.28.1)
