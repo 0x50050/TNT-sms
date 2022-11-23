@@ -1,6 +1,7 @@
 # TNT-sms
 
 ⭕ sms Bomber Support for Iranian mobile numbers +98
+Written by python 3.7.9
 
 
 # Tested on operating systems
@@ -19,3 +20,10 @@
   
   🎉 Find location and use service
   
+# requirements
+
+  ⚠ phonenumbers
+  
+  ⚠ datetime
+  
+  ⚠ requests
