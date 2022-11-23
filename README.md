@@ -3,19 +3,19 @@
 ⭕ sms Bomber Support for Iranian mobile numbers +98
 
 
-Tested on operating systems
+⭕Tested on operating systems
   
-  ⚙ Windows
+  ⚙Windows
   
-Ability
+⭕Ability
 
-    🔮 Many user agents to send SMS
+    🔮Many user agents to send SMS
   
-    🔮 Sending SMS from different services
+    🔮Sending SMS from different services
 
-update
+⭕update
 
-    🎉 Email Spamer(Soon)
+    🎉Email Spamer(Soon)
   
-    🎉 Find location and use service
+    🎉Find location and use service
   
